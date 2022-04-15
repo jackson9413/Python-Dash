@@ -63,6 +63,7 @@ app.layout = html.Div(children=[
     html.Hr(),    
     html.H1(children='Normal BSA X-bar Contorl Chart'),
     html.Hr(),
+    # add "Upload" button
     dcc.Upload([
         'Drag and Drop or ',
         html.A('Select a File')
@@ -76,6 +77,7 @@ app.layout = html.Div(children=[
         'textAlign': 'center'
     }),
     html.Hr(),
+    # add DashTable
     html.Div(
         children= [
             dash_table.DataTable(
@@ -90,10 +92,17 @@ app.layout = html.Div(children=[
         A Web App By Using Dash and Plotly.
     '''),
     html.Hr(),
+    # add plotly chart
     dcc.Graph(
         id='example-graph',
         figure=fig
-    )
+    ),
+    # add "Download" button
+    html.Hr(),
+    html.Div([
+    html.Button("Download Text", id="btn-download-txt"),
+    dcc.Download(id="download-text")
+])
 ])
 
 if __name__ == '__main__':
