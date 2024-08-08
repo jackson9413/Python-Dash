@@ -1,12 +1,52 @@
-# Introduction
-This is a project which use Python Dash to build a dashboard to the data. It includes uploading a csv file, showing the csv file in a table visual and an Xbar control chart, inputting the data dynamically, and downloading the data as a csv file.
-<br />
-# About the Data
-The data is the experiment data which the researchers and analysts input periodically.
-<br />
-# Getting Started
-1. Open a terminal and type "python app.py".
-2. Copy the link to a web browser to show the dashboard.
-3. Click "Upload" button to upload a csv file.
-4. Click "Input" button to input the new data.
-5. Click "Download" button to download the data in a csv format.
+# Normal X-bar Control Chart Dashboard
+
+## Introduction
+This project uses Python Dash to build a dashboard for visualizing data. It includes features for uploading a CSV file, displaying the CSV file in a table, showing an X-bar control chart, dynamically inputting data, and downloading the data as a CSV file.
+
+## About the Data
+The data used in this project is experimental data that researchers and analysts input periodically.
+
+## Getting Started
+
+### Prerequisites
+Make sure you have the following packages installed:
+- dash
+- plotly
+- pandas
+- openpyxl
+- tkinter
+
+You can install them using pip:
+    ```sh
+    pip install dash plotly pandas openpyxl
+    ```
+
+## Running the Application
+1. Open a terminal and type:
+   ```sh
+   python app.py
+   ```
+2. Open a web browser and navigate to:
+    ```sh
+    http://127.0.0.1:8050/
+    ```
+3. Click the "Upload" button to upload a CSV file.
+4. The data will be displayed in a table and an X-bar control chart.
+5. Click the "Download" button to download the data in CSV format.
+
+## Features
+* Upload CSV File: Allows users to upload a CSV file.
+* Display Data: Shows the uploaded data in a table.
+* X-bar Control Chart: Visualizes the data using an X-bar control chart.
+* Download Data: Allows users to download the data as a CSV file.
+
+## File Structure
+```plaintext
+.
+├── app.py
+├── README.md
+
+```
+
+## License
+This project is licensed under the MIT License.
